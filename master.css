@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.container {
+    width: 1500px;
+    height: 1000px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.container .left {
+    width: 35%;
+    height: 100%;
+    background-color: #FFF;
+    position: relative;
+}
+
+.container .left>span {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #0FD499;
+    border-radius: 50%;
+    position: absolute;
+    top: 44px;
+    left: 76px;
+}
+
+.container .left .child1 {
+    display: flex;
+    background: #3729b2;
+    flex-direction: column;
+    width: 380px;
+    height: 754px;
+    position: absolute;
+    top: 110px;
+    left: 144px;
+    justify-content: space-between;
+}
+
+.container .left .child1 .part1 img {
+    padding-left: 40px;
+}
+
+.container .left .child1 .part1 ul {
+    list-style: none;
+}
+
+.container .left .child1 .part1 ul li {
+    padding: 14px 0 10px 5px;
+    ;
+}
+
+.container .left .child1 .part1 button {
+    padding-left: 10px;
+    width: 100px;
+    height: 40px;
+    margin-left: 40px;
+    border-radius: 10px;
+    text-align: left;
+    border: none;
+    outline: none;
+    color: #FFF;
+    background-color: #6f88fb40;
+}
+
+.container .left .child1 .part1 {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-evenly;
+    color: #c0c8ff;
+}
+
+.container .left .child1 .part2 {
+    padding-left: 40px;
+    padding-bottom: 30px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #FFF;
+}
+
+.container .left .child1 .part2 h3 {
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #989898;
+}
+
+.container .left .child1 .part2 p {
+    margin-bottom: 0;
+    color: #cbcbcb;
+}
+
+.container .right {
+    width: 65%;
+    height: 100%;
+    background-color: #3729B2;
+    position: relative;
+}
+
+.container .right .child2 {
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    width: 75%;
+    height: 754px;
+    position: absolute;
+    top: 110px;
+    justify-content: flex-start;
+}
+
+.container .right .child2 .part3 {
+    width: 30%;
+    margin: 20px 0 0 40px;
+}
+
+.container .right .child2 .part3 h1 {
+    font-weight: 100;
+    font-size: 35px;
+}
+
+.container .right .child2 .part3 span {
+    color: #cbcbcb;
+}
+
+.container .right .child2 .part4 {
+    display: inline-flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.container .right .child2 .part4 .input,
+.office {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.container .right .child2 .part4 .input {
+    justify-content: space-evenly;
+}
+
+.container .right .child2 .part4 .office {
+    justify-content: flex-start;
+    position: relative;
+}
+
+.container .right .child2 .part4 .office span {
+    position: absolute;
+    top: 479px;
+    left: 256px;
+    width: 173px;
+    height: 173px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 50%;
+    background: #0fd499;
+    transform: rotateZ(45deg);
+}
+
+.container .right .child2 .part4 .office h2 {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.container .right .child2 .part4 .office p {
+    color: #b3b3b3;
+}
+
+input:focus {
+    transition: all .2s ease-in-out;
+    border-bottom-color: #636363;
+    border-bottom-width: 3px;
+}
+
+textarea:focus {
+    transition: all .2s ease-in-out;
+    border-bottom-color: #636363;
+    border-bottom-width: 3px;
+}
+
+input,
+textarea {
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #DDD;
+    outline: none;
+    padding-bottom: 20px;
+}
+
+textarea {
+    min-width: 200px;
+    max-width: 290px;
+    min-height: auto;
+    max-height: 100px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #3729b2;
+    font-weight: bold;
+    width: 145px;
+}
